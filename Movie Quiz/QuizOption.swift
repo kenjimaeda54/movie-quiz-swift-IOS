@@ -9,5 +9,5 @@ import Foundation
 
 
 struct QuizOption: Codable {
-	let name: string
+	let name: String
 }

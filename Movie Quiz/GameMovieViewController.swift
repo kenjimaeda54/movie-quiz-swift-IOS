@@ -8,17 +8,19 @@
 import UIKit
 
 class GameMovieViewController: UIViewController {
-
+	
 	@IBOutlet weak var viSoundBar: UIView!
 	@IBOutlet weak var sliMusic: UISlider!
 	@IBOutlet weak var imgSound: UIImageView!
 	@IBOutlet var btnNamovie: [UIButton]!
 	
+	var quizManager = QuizManager()
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+	
 	}
-
+	
 	@IBAction func playPauseSound(_ sender: UIButton) {
 	}
 	
