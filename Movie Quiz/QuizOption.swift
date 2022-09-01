@@ -11,3 +11,10 @@ import Foundation
 struct QuizOption: Codable {
 	let name: String
 }
+
+////MARK: - Equatable
+//extension QuizOption: Equatable {
+//	static func==(l:QuizOption,r:QuizOption) ->Bool{
+//		return l.name == r.name
+//	}
+//}

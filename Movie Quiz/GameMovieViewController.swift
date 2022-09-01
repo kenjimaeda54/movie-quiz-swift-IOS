@@ -18,7 +18,21 @@ class GameMovieViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
+	}
 	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		quizManager = QuizManager()
+		getNewQuiz()
+	}
+	
+	func getNewQuiz() {
+		let (quiz,option) = quizManager.generatorRandomQuiz()
+		print(quiz)
+		for i in 0...3 {
+			btnNamovie[i].setTitle(option[i].name, for: .normal)
+		}
 	}
 	
 	@IBAction func playPauseSound(_ sender: UIButton) {
@@ -26,6 +40,8 @@ class GameMovieViewController: UIViewController {
 	
 	
 	@IBAction func changeMusicStatus(_ sender: UIButton) {
+		quizManager.checkAnswer(sender.title(for: .normal))
+		getNewQuiz()
 	}
 	
 	@IBAction func showHideSound(_ sender: UIButton) {

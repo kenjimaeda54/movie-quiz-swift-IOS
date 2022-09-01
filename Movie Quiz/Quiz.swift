@@ -12,3 +12,5 @@ struct Quiz:Codable {
 	let name: String
 	let number: Int
 }
+
+
