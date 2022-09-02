@@ -24,6 +24,7 @@ class GameMovieViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		startBackgroundMusic()
+		viSoundBar.isHidden = true
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -31,32 +32,39 @@ class GameMovieViewController: UIViewController {
 		quizManager = QuizManager()
 		getNewQuiz()
 		startTimer()
-
+		
+	}
+	
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "congratulationsSegue"{
+			let vc = segue.destination as! CongratulationsViewController
+			vc.score = quizManager.score
+		}
 	}
 	
 	func startBackgroundMusic(){
 		if let url = Bundle.main.url(forResource: "MarchaImperial", withExtension: "mp3"){
-		playerItem = AVPlayerItem(url: url)
-		playerBackground = AVPlayer(playerItem: playerItem)
-		playerBackground?.volume = 0.2
-		playerBackground?.play()
-			//adicionar um obersar para manipular o slider de forma animada
-			playerBackground?.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, preferredTimescale: 1), queue: nil, using: {[self] (timer) in
+			playerItem = AVPlayerItem(url: url)
+			playerBackground = AVPlayer(playerItem: playerItem)
+			playerBackground?.volume = 0.2
+			playerBackground?.play()
+			//adicionar um obersador para manipular o slider de forma animada
+			playerBackground?.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, preferredTimescale: 1), queue: nil, using: { [self](timer) in
 				let percent = timer.seconds / playerItem.duration.seconds
 				sliMusic.setValue(Float(percent), animated: true)
-
 			})
 		}
 		
 	}
 	
-
+	
 	func startTimer() {
 		//vai ficar do tamanho da screen
 		//para animacao dar certo nao pode haver constraint por isso foi usado
 		//frame
 		vTimer.frame = view.frame
-		UIView.animate(withDuration: 60.0, delay: 0.0, options: .curveLinear) {
+		UIView.animate(withDuration: 30.0, delay: 0.0, options: .curveLinear) {
 			self.vTimer.frame.size.width = 0
 			//para ficar no centro
 			self.vTimer.frame.origin.x = self.view.center.x
@@ -98,6 +106,15 @@ class GameMovieViewController: UIViewController {
 	}
 	
 	@IBAction func playPauseSound(_ sender: UIButton) {
+		if playerBackground?.timeControlStatus == .paused {
+			playerBackground?.play()
+			sender.setImage(UIImage(named: "pause"), for: .normal)
+			
+		}else {
+			playerBackground?.pause()
+			sender.setImage(UIImage(named: "play"), for: .normal)
+		}
+		
 	}
 	
 	
@@ -107,10 +124,14 @@ class GameMovieViewController: UIViewController {
 	}
 	
 	@IBAction func showHideSound(_ sender: UIButton) {
+		viSoundBar.isHidden = !viSoundBar.isHidden
 	}
 	
 	
 	@IBAction func changeMusicTime(_ sender: UISlider) {
+		//sender value traz de 0 a 1,por isso multiplicado pelo tempo em seconds
+		playerBackground?.seek(to: CMTimeMakeWithSeconds(Double(sender.value) * playerItem.duration.seconds, preferredTimescale: 1))
+		
 	}
 	
 }

@@ -80,7 +80,6 @@ struct QuizManager {
 	mutating func  checkAnswer(_ name: String?) {
 		if name == round?.quiz.name {
 			score += 1
-			print("acertou")
 		}
 		
 	}
