@@ -18,10 +18,12 @@ class GameMovieViewController: UIViewController {
 	
 	var quizManager = QuizManager()
 	var player: AVAudioPlayer?
+	var playerBackground: AVPlayer?
+	var playerItem: AVPlayerItem!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+		startBackgroundMusic()
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
@@ -29,16 +31,26 @@ class GameMovieViewController: UIViewController {
 		quizManager = QuizManager()
 		getNewQuiz()
 		startTimer()
+
 	}
 	
-	func getNewQuiz() {
-		let (_,option) = quizManager.generatorRandomQuiz()
-		for i in 0...3 {
-			btnNamovie[i].setTitle(option[i].name, for: .normal)
+	func startBackgroundMusic(){
+		if let url = Bundle.main.url(forResource: "MarchaImperial", withExtension: "mp3"){
+		playerItem = AVPlayerItem(url: url)
+		playerBackground = AVPlayer(playerItem: playerItem)
+		playerBackground?.volume = 0.2
+		playerBackground?.play()
+			//adicionar um obersar para manipular o slider de forma animada
+			playerBackground?.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, preferredTimescale: 1), queue: nil, using: {[self] (timer) in
+				let percent = timer.seconds / playerItem.duration.seconds
+				sliMusic.setValue(Float(percent), animated: true)
+
+			})
 		}
-		playGame()
+		
 	}
 	
+
 	func startTimer() {
 		//vai ficar do tamanho da screen
 		//para animacao dar certo nao pode haver constraint por isso foi usado
@@ -69,6 +81,15 @@ class GameMovieViewController: UIViewController {
 		}
 		
 	}
+	
+	func getNewQuiz() {
+		let (_,option) = quizManager.generatorRandomQuiz()
+		for i in 0...3 {
+			btnNamovie[i].setTitle(option[i].name, for: .normal)
+		}
+		playGame()
+	}
+	
 	
 	func gameOver() {
 		performSegue(withIdentifier: "congratulationsSegue", sender: nil)

@@ -16,6 +16,9 @@ class CongratulationsViewController: UIViewController {
     }
     
 
-  
+	@IBAction func playAgaim(_ sender: UIButton) {
+		dismiss(animated: true)
+	}
+	
 
 }
