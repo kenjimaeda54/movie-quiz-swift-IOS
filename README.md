@@ -1,6 +1,5 @@
 # Movie quiz
-Aplicativo para descobrir qual música esta tocando no fundo.
-
+Aplicativo para descobrir qual música está tocando no fundo, de acordo as opções de filmes que aparecem
 
 ## Motivação
 Praticar novamente o uso das classes de AVFoundation e manipular arquivos em bundle
