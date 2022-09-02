@@ -19,7 +19,6 @@ struct QuizManager {
 	init() {
 		
 		if let urlQuizes = Bundle.main.url(forResource: "quizes", withExtension: "json"){
-			
 			do {
 				let data = try Data(contentsOf: urlQuizes)
 				if let jsonQuiz = jsonParse(data) as [Quiz]? {
@@ -28,10 +27,10 @@ struct QuizManager {
 				
 			}catch {
 				print(error.localizedDescription)
-				
 			}
-			
 		}
+		
+		
 		if let urlQuizOptions = Bundle.main.url(forResource: "quizes", withExtension: "json"){
 			
 			do {
@@ -66,14 +65,14 @@ struct QuizManager {
 		let quiz = quizes[index]
 		//vantagem de usar set que nao ira repetir e alem de tudo
 		//nao sera ordenado assim nosso index pode estar em qualquer lugar
-		var quizIndex: Set<Int> = [index]
-		while quizIndex.count < 4  {
+		var indexQuizOption: Set<Int> = [index]
+		while indexQuizOption.count < 4 {
 			//nao tem como se repetir porque e um set
 			let index = Int.random(in: 0...4)
-			quizIndex.insert(index)
+			indexQuizOption.insert(index)
 		}
-		let options = quizIndex.map({quizOptions[$0]})
-		round = (quiz,options)
+		let options = indexQuizOption.map({quizOptions[$0]})
+		round = Round(quiz,options)
 		return round!
 	}
 	

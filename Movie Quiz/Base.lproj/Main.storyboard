@@ -19,6 +19,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="uwD-xu-LxH">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <view alpha="0.55000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfF-FR-zjj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmU-JP-fVw">
                                 <rect key="frame" x="0.0" y="836" width="414" height="60"/>
                                 <subviews>
@@ -123,12 +128,24 @@
                                             <constraint firstAttribute="width" secondItem="ODR-Rh-gjZ" secondAttribute="height" multiplier="750:535" id="07l-qd-Nbh"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEk-Ge-w0V">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="602"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="playGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nZT-Ga-RSh"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ODR-Rh-gjZ" firstAttribute="centerY" secondItem="11C-JU-gmJ" secondAttribute="centerY" id="8dt-QE-BCY"/>
+                                    <constraint firstAttribute="bottom" secondItem="GEk-Ge-w0V" secondAttribute="bottom" id="g3E-Qs-TQr"/>
                                     <constraint firstItem="ODR-Rh-gjZ" firstAttribute="width" secondItem="11C-JU-gmJ" secondAttribute="width" id="hWd-J3-Asi"/>
                                     <constraint firstItem="ODR-Rh-gjZ" firstAttribute="leading" secondItem="11C-JU-gmJ" secondAttribute="leading" id="iKq-R2-qyJ"/>
+                                    <constraint firstItem="GEk-Ge-w0V" firstAttribute="top" secondItem="11C-JU-gmJ" secondAttribute="top" id="n5G-BE-JVB"/>
+                                    <constraint firstAttribute="trailing" secondItem="GEk-Ge-w0V" secondAttribute="trailing" id="qdR-ty-f41"/>
+                                    <constraint firstItem="GEk-Ge-w0V" firstAttribute="leading" secondItem="11C-JU-gmJ" secondAttribute="leading" id="zot-in-bpB"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -168,6 +185,7 @@
                     <connections>
                         <outlet property="imgSound" destination="ODR-Rh-gjZ" id="mT2-y0-bch"/>
                         <outlet property="sliMusic" destination="3Kf-Z7-u0c" id="bPV-43-6Qu"/>
+                        <outlet property="vTimer" destination="kfF-FR-zjj" id="CNS-My-0G3"/>
                         <outlet property="viSoundBar" destination="VmU-JP-fVw" id="q40-Vz-wEm"/>
                         <outletCollection property="btnNamovie" destination="ncX-vq-1tD" collectionClass="NSMutableArray" id="ew7-AW-Ubn"/>
                         <outletCollection property="btnNamovie" destination="Y9X-mg-pnx" collectionClass="NSMutableArray" id="ivI-9J-x78"/>

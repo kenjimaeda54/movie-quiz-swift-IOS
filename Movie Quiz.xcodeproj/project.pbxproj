@@ -13,6 +13,27 @@
 		811814F128C0CBA1006A15CC /* options.json in Resources */ = {isa = PBXBuildFile; fileRef = 811814F028C0CBA1006A15CC /* options.json */; };
 		811814F328C0CBAE006A15CC /* quizes.json in Resources */ = {isa = PBXBuildFile; fileRef = 811814F228C0CBAE006A15CC /* quizes.json */; };
 		811814F628C0CC6F006A15CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811814F528C0CC6F006A15CC /* Assets.xcassets */; };
+		8118153528C18D17006A15CC /* quote8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152028C18D16006A15CC /* quote8.mp3 */; };
+		8118153628C18D17006A15CC /* quote17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152128C18D16006A15CC /* quote17.mp3 */; };
+		8118153728C18D17006A15CC /* quote19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152228C18D16006A15CC /* quote19.mp3 */; };
+		8118153828C18D17006A15CC /* quote2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152328C18D16006A15CC /* quote2.mp3 */; };
+		8118153928C18D17006A15CC /* quote16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152428C18D16006A15CC /* quote16.mp3 */; };
+		8118153A28C18D17006A15CC /* quote18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152528C18D16006A15CC /* quote18.mp3 */; };
+		8118153B28C18D17006A15CC /* quote10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152628C18D16006A15CC /* quote10.mp3 */; };
+		8118153C28C18D17006A15CC /* MarchaImperial.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152728C18D16006A15CC /* MarchaImperial.mp3 */; };
+		8118153D28C18D17006A15CC /* quote9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152828C18D16006A15CC /* quote9.mp3 */; };
+		8118153E28C18D17006A15CC /* quote15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152928C18D16006A15CC /* quote15.mp3 */; };
+		8118153F28C18D17006A15CC /* quote5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152A28C18D16006A15CC /* quote5.mp3 */; };
+		8118154028C18D17006A15CC /* quote13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152B28C18D17006A15CC /* quote13.mp3 */; };
+		8118154128C18D17006A15CC /* quote3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152C28C18D17006A15CC /* quote3.mp3 */; };
+		8118154228C18D17006A15CC /* quote20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152D28C18D17006A15CC /* quote20.mp3 */; };
+		8118154328C18D17006A15CC /* quote11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152E28C18D17006A15CC /* quote11.mp3 */; };
+		8118154428C18D17006A15CC /* quote6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118152F28C18D17006A15CC /* quote6.mp3 */; };
+		8118154528C18D17006A15CC /* quote7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118153028C18D17006A15CC /* quote7.mp3 */; };
+		8118154628C18D17006A15CC /* quote12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118153128C18D17006A15CC /* quote12.mp3 */; };
+		8118154728C18D17006A15CC /* quote4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118153228C18D17006A15CC /* quote4.mp3 */; };
+		8118154828C18D17006A15CC /* quote14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118153328C18D17006A15CC /* quote14.mp3 */; };
+		8118154928C18D17006A15CC /* quote1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8118153428C18D17006A15CC /* quote1.mp3 */; };
 		81E6887328BEADF900304319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E6887228BEADF900304319 /* AppDelegate.swift */; };
 		81E6887528BEADF900304319 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E6887428BEADF900304319 /* SceneDelegate.swift */; };
 		81E6887728BEADF900304319 /* GameMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E6887628BEADF900304319 /* GameMovieViewController.swift */; };
@@ -28,6 +49,27 @@
 		811814F028C0CBA1006A15CC /* options.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = options.json; sourceTree = "<group>"; };
 		811814F228C0CBAE006A15CC /* quizes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quizes.json; sourceTree = "<group>"; };
 		811814F528C0CC6F006A15CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8118152028C18D16006A15CC /* quote8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote8.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote8.mp3"; sourceTree = "<group>"; };
+		8118152128C18D16006A15CC /* quote17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote17.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote17.mp3"; sourceTree = "<group>"; };
+		8118152228C18D16006A15CC /* quote19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote19.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote19.mp3"; sourceTree = "<group>"; };
+		8118152328C18D16006A15CC /* quote2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote2.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote2.mp3"; sourceTree = "<group>"; };
+		8118152428C18D16006A15CC /* quote16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote16.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote16.mp3"; sourceTree = "<group>"; };
+		8118152528C18D16006A15CC /* quote18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote18.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote18.mp3"; sourceTree = "<group>"; };
+		8118152628C18D16006A15CC /* quote10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote10.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote10.mp3"; sourceTree = "<group>"; };
+		8118152728C18D16006A15CC /* MarchaImperial.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MarchaImperial.mp3; sourceTree = "<group>"; };
+		8118152828C18D16006A15CC /* quote9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote9.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote9.mp3"; sourceTree = "<group>"; };
+		8118152928C18D16006A15CC /* quote15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote15.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote15.mp3"; sourceTree = "<group>"; };
+		8118152A28C18D16006A15CC /* quote5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote5.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote5.mp3"; sourceTree = "<group>"; };
+		8118152B28C18D17006A15CC /* quote13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote13.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote13.mp3"; sourceTree = "<group>"; };
+		8118152C28C18D17006A15CC /* quote3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote3.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote3.mp3"; sourceTree = "<group>"; };
+		8118152D28C18D17006A15CC /* quote20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote20.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote20.mp3"; sourceTree = "<group>"; };
+		8118152E28C18D17006A15CC /* quote11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote11.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote11.mp3"; sourceTree = "<group>"; };
+		8118152F28C18D17006A15CC /* quote6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote6.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote6.mp3"; sourceTree = "<group>"; };
+		8118153028C18D17006A15CC /* quote7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote7.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote7.mp3"; sourceTree = "<group>"; };
+		8118153128C18D17006A15CC /* quote12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote12.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote12.mp3"; sourceTree = "<group>"; };
+		8118153228C18D17006A15CC /* quote4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote4.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote4.mp3"; sourceTree = "<group>"; };
+		8118153328C18D17006A15CC /* quote14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote14.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote14.mp3"; sourceTree = "<group>"; };
+		8118153428C18D17006A15CC /* quote1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = quote1.mp3; path = "../../../../../Downloads/Arquivos MovieQuiz 2/Files/quote1.mp3"; sourceTree = "<group>"; };
 		81E6886F28BEADF900304319 /* Movie Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E6887228BEADF900304319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81E6887428BEADF900304319 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +100,34 @@
 			path = files;
 			sourceTree = "<group>";
 		};
+		811814F728C188DE006A15CC /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8118152728C18D16006A15CC /* MarchaImperial.mp3 */,
+				8118153428C18D17006A15CC /* quote1.mp3 */,
+				8118152328C18D16006A15CC /* quote2.mp3 */,
+				8118152C28C18D17006A15CC /* quote3.mp3 */,
+				8118153228C18D17006A15CC /* quote4.mp3 */,
+				8118152A28C18D16006A15CC /* quote5.mp3 */,
+				8118152F28C18D17006A15CC /* quote6.mp3 */,
+				8118153028C18D17006A15CC /* quote7.mp3 */,
+				8118152028C18D16006A15CC /* quote8.mp3 */,
+				8118152828C18D16006A15CC /* quote9.mp3 */,
+				8118152628C18D16006A15CC /* quote10.mp3 */,
+				8118152E28C18D17006A15CC /* quote11.mp3 */,
+				8118153128C18D17006A15CC /* quote12.mp3 */,
+				8118152B28C18D17006A15CC /* quote13.mp3 */,
+				8118153328C18D17006A15CC /* quote14.mp3 */,
+				8118152928C18D16006A15CC /* quote15.mp3 */,
+				8118152428C18D16006A15CC /* quote16.mp3 */,
+				8118152128C18D16006A15CC /* quote17.mp3 */,
+				8118152528C18D16006A15CC /* quote18.mp3 */,
+				8118152228C18D16006A15CC /* quote19.mp3 */,
+				8118152D28C18D17006A15CC /* quote20.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		81E6886628BEADF900304319 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +150,7 @@
 				81E6887228BEADF900304319 /* AppDelegate.swift */,
 				81E6887428BEADF900304319 /* SceneDelegate.swift */,
 				811814F428C0CBC1006A15CC /* files */,
+				811814F728C188DE006A15CC /* sounds */,
 				811814EC28C0CB48006A15CC /* Quiz.swift */,
 				811814EE28C0CB54006A15CC /* QuizOption.swift */,
 				811814EA28C0CB39006A15CC /* QuizManager.swift */,
@@ -151,11 +222,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8118154328C18D17006A15CC /* quote11.mp3 in Resources */,
 				811814F128C0CBA1006A15CC /* options.json in Resources */,
+				8118154628C18D17006A15CC /* quote12.mp3 in Resources */,
+				8118154528C18D17006A15CC /* quote7.mp3 in Resources */,
+				8118154428C18D17006A15CC /* quote6.mp3 in Resources */,
+				8118153528C18D17006A15CC /* quote8.mp3 in Resources */,
 				811814F328C0CBAE006A15CC /* quizes.json in Resources */,
 				81E6887F28BEADFC00304319 /* LaunchScreen.storyboard in Resources */,
+				8118154128C18D17006A15CC /* quote3.mp3 in Resources */,
+				8118153728C18D17006A15CC /* quote19.mp3 in Resources */,
+				8118154028C18D17006A15CC /* quote13.mp3 in Resources */,
+				8118153D28C18D17006A15CC /* quote9.mp3 in Resources */,
+				8118154728C18D17006A15CC /* quote4.mp3 in Resources */,
+				8118154828C18D17006A15CC /* quote14.mp3 in Resources */,
 				81E6887A28BEADF900304319 /* Main.storyboard in Resources */,
+				8118153828C18D17006A15CC /* quote2.mp3 in Resources */,
 				811814F628C0CC6F006A15CC /* Assets.xcassets in Resources */,
+				8118153E28C18D17006A15CC /* quote15.mp3 in Resources */,
+				8118153A28C18D17006A15CC /* quote18.mp3 in Resources */,
+				8118153B28C18D17006A15CC /* quote10.mp3 in Resources */,
+				8118154228C18D17006A15CC /* quote20.mp3 in Resources */,
+				8118153628C18D17006A15CC /* quote17.mp3 in Resources */,
+				8118153928C18D17006A15CC /* quote16.mp3 in Resources */,
+				8118154928C18D17006A15CC /* quote1.mp3 in Resources */,
+				8118153C28C18D17006A15CC /* MarchaImperial.mp3 in Resources */,
+				8118153F28C18D17006A15CC /* quote5.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
